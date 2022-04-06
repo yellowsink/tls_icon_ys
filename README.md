@@ -1,12 +1,13 @@
-# Roundcube_TLS_Icon_with_Hmailserver
+# Roundcube TLS Icon
 
-Displays a small icon after the subject line that displays the (presumed) encryption state of received mails. This plugin parses the "Received" header for the last hop and checks if TLS was used. 
-Green signal: TLS1.2 or TLS1.3 
-Blue signal: Internal message from localhost
-If the encryption is correct, it will print out the details of its type.
+Displays a small icon after the subject line that displays the (presumed) encryption state of received mails.
+This plugin parses the "Received" header for the last hop and checks if TLS was used. This requires TLS logging in the receiving MTA.
 
-Internal:
-![image](https://user-images.githubusercontent.com/75365189/162017996-53bc3e67-936e-4528-8fd0-088c36e157f4.png)
+In Postfix this can be enabled by setting `smtpd_tls_received_header = yes`. The regex used to parse the header has only been tested against Postfix.
 
-External secure:
-![image](https://user-images.githubusercontent.com/75365189/162018076-71264b4b-58bf-4f31-8ee1-757c98992ae8.png)
+Note that while this talks about "encryption", this does not imply security. An encrypted mail may still be insecure, mostly because mailservers generally use  "opportunistic TLS", where MITM attacks are possible.
+This also only validates the last hop of an email - some emails may run through multiple hops and we don't know anything about the security of these.
+
+Inspired by https://github.com/SS88UK/roundcube-easy-unsubscribe
+
+![Example screenshot](tls_icon_example.png)
