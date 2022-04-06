@@ -1,0 +1,17 @@
+{
+    "name": "oszto90/tls_icon_with_hmail",
+    "type": "roundcube-plugin",
+    "description": "Displays a lock next to the message if it was received using TLS1.2 or 1.3.",
+    "license": "MIT",
+    "keywords": ["TLS", "SSL", "icon", "logging"],
+    "homepage": "https://github.com/oszto90/Roundcube_TLS_Icon_with_Hmailserver",
+	"repositories": [
+        {
+            "type": "composer",
+            "url": "https://plugins.roundcube.net"
+        }
+    ],
+    "require": {
+        "roundcube/plugin-installer": ">=0.1.6"
+    }
+}
