@@ -53,14 +53,14 @@ class tls_icon_with_hmail extends rcube_plugin
 				$pos = strrpos($data, $needle);
 				$data = substr_replace($data, "", $pos, strlen($needle));
 				
-				$this->icon_img .= '<img class="lock_icon" src="plugins/tls_icon/lock.svg" title="'. htmlentities($data) .'" />';
+				$this->icon_img .= '<img class="lock_icon" src="plugins/tls_icon_with_hmail/lock.svg" title="'. htmlentities($data) .'" />';
 			} else if(preg_match_all('/\[127.0.0.1\]/im', $Received, $items, PREG_PATTERN_ORDER)){
-				$this->icon_img .= '<img class="lock_icon" src="plugins/tls_icon/blue_lock.svg" title="' . $this->gettext('internal') . '" />';
+				$this->icon_img .= '<img class="lock_icon" src="plugins/tls_icon_with_hmail/blue_lock.svg" title="' . $this->gettext('internal') . '" />';
 			} 
 			else {
 				// TODO: Mails received from localhost but without TLS are currently flagged insecure
 				//$data = $items[0][0];
-				$this->icon_img .= '<img class="lock_icon" src="plugins/tls_icon/unlock.svg" title="' . $this->gettext('unencrypted') . '" />';
+				$this->icon_img .= '<img class="lock_icon" src="plugins/tls_icon_with_hmail/unlock.svg" title="' . $this->gettext('unencrypted') . '" />';
 			}
 		}
 
