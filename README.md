@@ -12,6 +12,13 @@ Supported languages:
 - Russian
 - Dutch
 
+Update 1.0.0
+- First release
+
+Update 1.0.1
+- Some bugfix
+- Add Hungarian language
+
 Update 1.0.2
 - Link bug fix
 
