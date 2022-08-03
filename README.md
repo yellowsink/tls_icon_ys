@@ -5,6 +5,19 @@ Green signal: TLS1.2 or TLS1.3
 Blue signal: Internal message from localhost
 If the encryption is correct, it will print out the details of its type.
 
+Supported languages:
+- English
+- Hungarian
+- German
+- Russian
+- Dutch
+
+Update 1.0.2
+- Link bug fix
+Update 1.0.3
+- Add IPv6 Support
+- Add Dutch Language
+
 Internal:
 ![image](https://user-images.githubusercontent.com/75365189/162017996-53bc3e67-936e-4528-8fd0-088c36e157f4.png)
 
