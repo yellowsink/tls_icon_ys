@@ -54,7 +54,7 @@ class tls_icon_with_hmail extends rcube_plugin
 				$data = substr_replace($data, "", $pos, strlen($needle));
 				
 				$this->icon_img .= '<img class="lock_icon" src="plugins/tls_icon_with_hmail/lock.svg" title="'. htmlentities($data) .'" />';
-			} else if(preg_match_all('/\[127.0.0.1\]/im', $Received, $items, PREG_PATTERN_ORDER)){
+			} else if(preg_match_all('/\[127.0.0.1\]|\[::1\]/im', $Received, $items, PREG_PATTERN_ORDER)){
 				$this->icon_img .= '<img class="lock_icon" src="plugins/tls_icon_with_hmail/blue_lock.svg" title="' . $this->gettext('internal') . '" />';
 			} 
 			else {
