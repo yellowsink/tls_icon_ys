@@ -8,3 +8,16 @@
 // This setting has no effect if its value exceeds the number of hops found in the mail.
 // Default: 0 (ignores no hops and uses the last Received-Header).
 $config['tls_icon_ignore_hops'] = 0;
+
+$config['tls_icon_headers'] = [
+    'hmail' => [
+        'pre' => 'version(',
+        'pattern' => '\(version=TLSv1.[2-3].*\)'
+        'post' => ')'
+    ],
+    'exim' => [
+        'pre' => '(',
+        'pattern' => '\(TLSv?1\.[2-3].*\)',
+        'post' => ')'
+    ]
+];
