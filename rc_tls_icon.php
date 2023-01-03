@@ -7,6 +7,7 @@ class rc_tls_icon extends rcube_plugin
 
 	function init()
 	{
+	    $this->load_config();
 		$this->add_hook('message_headers_output', array($this, 'message_headers'));
 		$this->add_hook('storage_init', array($this, 'storage_init'));
 		
