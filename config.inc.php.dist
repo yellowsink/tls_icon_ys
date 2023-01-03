@@ -3,12 +3,12 @@
 $config['tls_icon_headers'] = [
     'hmail' => [
         'pre' => 'version(',
-        'pattern' => '\(version=TLSv1.[2-3].*\)'
+        'pattern' => '\(version=TLSv1.[2-3].*\)',
         'post' => ')'
     ],
     'exim' => [
         'pre' => '(',
-        'pattern' => '\(TLSv?1\.[2-3].*\)',
-        'post' => ')'
+        'pattern' => '\(TLSv?1\.[2-3]\s*\)*[a-z0-9\-_\ ]+\(',
+        'post' => ' ('
     ]
 ];
