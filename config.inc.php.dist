@@ -1,14 +1,9 @@
 <?php
 
-$config['tls_icon_headers'] = [
-    'hmail' => [
-        'pre' => 'version(',
-        'pattern' => '\(version=TLSv1.[2-3].*\)',
-        'post' => ')'
-    ],
-    'exim' => [
-        'pre' => '(',
-        'pattern' => '\(TLSv?1\.[2-3]\s*\)*[a-z0-9\-_\ ]+\(',
-        'post' => ' ('
-    ]
+$config['tls_icon'] = [
+    'header_pattern' => '(by <your.mail.server>|from \[127\.0\.0\.1\])',
+    'check_pattern' => '\(using TLSv?(1\.[2-3])',
+    'local_pattern' => '(mailcowdockerized-dovecot-mailcow-1|127.0.0.1)',
+    'tooltip_pattern' =>  '\(using\s(.*?)\s',
+
 ];

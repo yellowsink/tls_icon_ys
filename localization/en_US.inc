@@ -2,5 +2,6 @@
 
 $labels = array();
 
-$labels['internal'] = "Mail was internal";
+$labels['internal'] = "Message received internal";
 $labels['unencrypted'] = "Message received over an unencrypted connection!";
+$labels['encrypted'] = "Message received over an encrypted connection";
