@@ -1,12 +1,12 @@
 <?php
 
-if (!isset($config['tls_icon']))
-{
-	$config['tls_icon'] = [
-	    'header_pattern' => '(by <your.mail.server>|from \[127\.0\.0\.1\])',
-	    'check_pattern' => '\(using TLSv?(1\.[2-3])',
-	    'local_pattern' => '(mailcowdockerized-dovecot-mailcow-1|127.0.0.1)',
-	    'tooltip_pattern' =>  '\(using\s(.*?)\s',
-
-	];
-}
+#if (!isset($config['tls_icon']))
+#{
+#	$config['tls_icon'] = [
+#	    'header_pattern' => '(by <your.mail.server>|from \[127\.0\.0\.1\])',
+#	    'check_pattern' => '\(using TLSv?(1\.[2-3])',
+#	    'local_pattern' => '(mailcowdockerized-dovecot-mailcow-1|127.0.0.1)',
+#	    'tooltip_pattern' =>  '\(using\s(.*?)\s',
+#
+#	];
+#}
