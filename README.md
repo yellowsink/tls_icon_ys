@@ -1,5 +1,11 @@
 # TLS Icon Plugin for Roundcube
 
+## Fork changes
+
+In upstream, config.inc.php is ran every single time, overwriting your own config (at least with docker), so this fixes that. Also, this makes the tooltip look nicer.
+
+## Original README
+
 Displays a small icon after the subject line that displays the (presumed) encryption state of received mails. 
 - Green lock: TLS1.2 or TLS1.3 with Details
 - Blue lock: Internal message from localhost
