@@ -60,7 +60,7 @@ class tls_icon_ys extends rcube_plugin
 				if (preg_match('/' . $tls_icon_headers['tooltip_pattern'] . '/i', $received, $matches)) {
 					for($i = 1; $i < count($matches); $i++) {
 						if ($matches[$i] != "") {
-							$tooltip .= ": ". $matches[$i];
+							$tooltip .= $matches[$i];
 							break;
 						}
 					}

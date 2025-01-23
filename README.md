@@ -4,6 +4,18 @@
 
 In upstream, config.inc.php is ran every single time, overwriting your own config (at least with docker), so this fixes that. Also, this makes the tooltip look nicer.
 
+Configuration for https://stalw.art:
+```php
+<?php
+
+$config['tls_icon'] = [
+    'header_pattern' => 'by your.mail.server',
+    'check_pattern' => 'using TLSv1\.[23]',
+    'local_pattern' => '(local-hostname|127.0.0.1)',
+    'tooltip_pattern' =>  '(using TLSv1.[23] [A-Z0-9-_ ]*)\)',
+];
+```
+
 ## Original README
 
 Displays a small icon after the subject line that displays the (presumed) encryption state of received mails. 
