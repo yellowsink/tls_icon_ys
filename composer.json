@@ -1,5 +1,5 @@
 {
-    "name": "foorschtbar/tls_icon_ys",
+    "name": "yellowsink/tls_icon_ys",
     "type": "roundcube-plugin",
     "description": "(Fork) Displays a small icon in Roundcube after the subject line that displays the (presumed) encryption state of received mails. ",
     "license": "MIT",
