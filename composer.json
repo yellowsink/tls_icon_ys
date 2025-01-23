@@ -1,7 +1,7 @@
 {
-    "name": "foorschtbar/tls_icon",
+    "name": "foorschtbar/tls_icon_ys",
     "type": "roundcube-plugin",
-    "description": "Displays a small icon in Roundcube after the subject line that displays the (presumed) encryption state of received mails. ",
+    "description": "(Fork) Displays a small icon in Roundcube after the subject line that displays the (presumed) encryption state of received mails. ",
     "license": "MIT",
     "keywords": [
         "TLS",
@@ -9,7 +9,7 @@
         "icon",
         "logging"
     ],
-    "homepage": "https://github.com/foorschtbar/tls_icon",
+    "homepage": "https://github.com/yellowsink/tls_icon_ys",
     "authors": [
         {
             "name:": "oszto90"
@@ -19,13 +19,16 @@
         },
         {
             "name": "foorschtbar"
+        },
+        {
+            "name": "yellowsink"
         }
     ],
     "version": "2.0.0",
     "repositories": [
         {
             "type": "vcs",
-            "url": "https://github.com/foorschtbar/tls_icon"
+            "url": "https://github.com/yellowsink/tls_icon_ys"
         },
         {
             "type": "composer",
@@ -34,16 +37,5 @@
     ],
     "require": {
         "roundcube/plugin-installer": ">=0.1.6"
-    },
-    "support": {
-        "issues": "https://github.com/foorschtbar/tls_icon/-/issues",
-        "source": "https://github.com/foorschtbar/tls_icon"
-    },
-    "extra": {
-        "roundcube": {
-            "persistent-files": [
-                "config.inc.php"
-            ]
-        }
     }
 }
