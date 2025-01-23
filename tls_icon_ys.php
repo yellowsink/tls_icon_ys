@@ -1,6 +1,6 @@
 <?php
 
-class tls_icon extends rcube_plugin
+class tls_icon_ys extends rcube_plugin
 {
 	private $message_headers_done = false;
 	private $icon_img = '';
@@ -11,7 +11,7 @@ class tls_icon extends rcube_plugin
 		$this->add_hook('message_headers_output', array($this, 'message_headers'));
 		$this->add_hook('storage_init', array($this, 'storage_init'));
 
-		$this->include_stylesheet('tls_icon.css');
+		$this->include_stylesheet('tls_icon_ys.css');
 
 		$this->add_texts('localization/');
 	}
