@@ -2,6 +2,6 @@
 
 $labels = array();
 
-$labels['internal'] = "Message received internal";
-$labels['unencrypted'] = "Message received over an unencrypted connection!";
-$labels['encrypted'] = "Message received over an encrypted connection";
+$labels['internal'] = "Delivered locally";
+$labels['unencrypted'] = "Delivered over an unencrypted connection!";
+$labels['encrypted'] = "Delivery encrypted ";
